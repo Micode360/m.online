@@ -86,7 +86,7 @@ export default function Darshboard() {
                             </div>
                             <div className="card-info">
                                 <h4 className="item">Adidas 416 Pro</h4>
-                                <p className="item-description">2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade</p>
+                                <p className="item-description">2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade </p>
                             </div>
                         </div>
                     </div>

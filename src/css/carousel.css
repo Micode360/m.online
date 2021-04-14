@@ -1,14 +1,35 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 
-.carousel-container{
+.carousel-container {
     /* display: flex;
     flex-direction: row;
     justify-content: center; */
     /* border: 1px solid red;
     width: 30%; */
+    display: block;
+    /* width: 30%; */
 }
 
-.item{
-    color:#ffffff !important
+.slider{
+    border: 1px solid red;
+}
+
+.item-card{
+    overflow: hidden;
+}
+
+.card-height {
+    height: 320px;
+}
+
+.slide {
+    transform: scale(0.8);
+    transition: transform 300ms;
+    opacity: 0.5;
+}
+
+.activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
 }

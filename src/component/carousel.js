@@ -1,3 +1,4 @@
+import { useState } from "react"
 import '../css/carousel.css'
 import addidas from "../img/addidas_ball.png"
 import Slider from "react-slick";
@@ -5,15 +6,8 @@ import Slider from "react-slick";
 
 export default function Carousel() {
 
-    // const settings = {
-    //     className: "center",
-    //     centerMode: true,
-    //     infinite: true,
-    //     centerPadding: "60px",
-    //     slidesToShow: 3,
-    //     speed: 500
-    // };
-    const arr = [
+
+    const productArrOfObj = [
         {
             title: 'Adidas 416 Pro',
             description: '2021 ball brand with Aesthetic letter upgrade',
@@ -41,19 +35,17 @@ export default function Carousel() {
             amount: 13.44,
             currency: 'dollars',
             image: addidas
+        },
+        {
+            title: 'Telsa Edition',
+            description: 'A special ball created to go to mars',
+            amount: 50.00,
+            currency: 'dollars',
+            image: addidas
         }
     ];
 
-    // const settings = {
-    //     className: "center",
-    //     centerMode: true,
-    //     infinite: true,
-    //     lazyLoad: true,
-    //     centerPadding: "0",
-    //     slidesToShow: 3,
-    //     speed: 300,
-    //   //  beforeChange: (current, next) => 
-    // };
+    const [productIndex, setProductIndex] = useState(0);
 
     const settings = {
       className: "center",
@@ -61,19 +53,21 @@ export default function Carousel() {
       infinite: true,
       centerPadding: "60px",
       slidesToShow: 3,
-      speed: 500
+      speed: 500,
+      beforeChange: (current, next) => setProductIndex(next)
     };
+    console.log(productIndex);
 
     return (
         <div className="carousel-container">
             <div className="carousel-carton">
-            <Slider {...settings}>
+            <Slider className="slider" {...settings}>
                 {
-                    arr.map((item, id) => {
+                    productArrOfObj.map((item, id) => {
 
                         return (
-                            <div  key={id}>
-                                <div className="item-card">
+                            <div className={id === productIndex ? "slide activeSlide": "slide"} key={id}>
+                                <div className="item-card card-height">
                                     <div className="item-card-body">
                                         <div className="item-img-container">
                                             <img src={item.image} alt="addidas_ball" className="item-img" />

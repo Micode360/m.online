@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import addidas from "../img/addidas_ball.png"
 import { Dropdown } from "react-bootstrap"
-
+import  Carousel  from "./carousel"
 
 
 
@@ -36,8 +36,10 @@ export default function Darshboard() {
                 </div>
             </section>
 
+            
             <section className="body-section">
-
+            <Carousel/>
+            
                 <div className="b-2nd-sub-header p-2 rounded">
                     <div>
                         <Dropdown>
@@ -84,7 +86,7 @@ export default function Darshboard() {
                             </div>
                             <div className="card-info">
                                 <h4 className="item">Adidas 416 Pro</h4>
-                                <p className="item-description">2021 ball brand with Aesthetic letter upgrade</p>
+                                <p className="item-description">2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade 2021 ball brand upgrade</p>
                             </div>
                         </div>
                     </div>

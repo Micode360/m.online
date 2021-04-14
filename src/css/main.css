@@ -15,11 +15,11 @@
 .btn:active, .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: none !important;
 }
-
   
-  .black{
-      color:#0d0d0d !important;
-  }
+.black{
+    color:#0d0d0d !important;
+}
+
   .white{
     color:#ffffff !important;
 }
@@ -55,7 +55,7 @@ body{
     right: 50px;
 }
 
-.showcase{
+.showcase {
     background-image: url(../img/showcase.jpg.png);
     background-position: center;
     background-repeat: no-repeat;

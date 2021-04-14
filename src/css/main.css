@@ -114,7 +114,7 @@ body{
 .item-card{
     background-color: #161616;
     padding: 18px 12px;
-    border-radius: 4px;;
+    border-radius: 4px;
     margin: 2vw 0;
     width: 250px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -144,7 +144,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 
 .item-img{
     width: 130px;
@@ -182,7 +181,6 @@ body{
     color: #8d8d8d;
 }
 
-
 @media(max-width:1211px){
 
     .items-grid-section{
@@ -216,7 +214,6 @@ body{
     }   
     
 }
-
 
 @media(max-width:591px){
     .body-section{
@@ -260,7 +257,6 @@ body{
     } 
     
 }
-
 
 @media(max-width:280px){
     .header{

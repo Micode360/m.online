@@ -51,23 +51,24 @@ export default function Carousel() {
       className: "center",
       centerMode: true,
       infinite: true,
+      lazyLoad:true,
       centerPadding: "60px",
       slidesToShow: 3,
       speed: 500,
       beforeChange: (current, next) => setProductIndex(next)
     };
-    console.log(productIndex);
+
 
     return (
         <div className="carousel-container">
             <div className="carousel-carton">
-            <Slider className="slider" {...settings}>
+            <Slider {...settings}>
                 {
                     productArrOfObj.map((item, id) => {
-
+                        
                         return (
-                            <div className={id === productIndex ? "slide activeSlide": "slide"} key={id}>
-                                <div className="item-card card-height">
+                           <div className={id === productIndex ? "card-item slide activeSlide": "card-item slide"} key={id}>
+                           <div className="item-card card-height">
                                     <div className="item-card-body">
                                         <div className="item-img-container">
                                             <img src={item.image} alt="addidas_ball" className="item-img" />
@@ -82,8 +83,7 @@ export default function Carousel() {
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
+                           </div>
                         )
                     })
                 }

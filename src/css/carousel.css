@@ -9,8 +9,9 @@
     overflow: hidden;
 }
 
-.card-height {
+.card-carousel {
     height: 320px;
+    padding: 12px;
 }
 
 .slide {
@@ -33,4 +34,61 @@
 
 .slick-arrow{
     transform: scale(1.1);
+}
+
+
+
+@media(max-width:1191px) {
+    .carousel-container{
+        transform: scale(0.8);
+    }
+    .slide {
+        transform: scale(0.6);
+        transition: transform 300ms;
+        opacity: 0.5;
+    }
+    
+    .activeSlide {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+
+}
+
+
+@media(max-width:1040px) {
+    .carousel-container{
+        transform: scale(0.9);
+    }
+    .slide {
+        transform: scale(0.5);
+        transition: transform 300ms;
+        opacity: 0.5;
+    }
+    
+    .activeSlide {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+
+    
+}
+
+
+@media(max-width:944px) {
+    .carousel-container{
+        transform: scale(0.9);
+    }
+    .slide {
+        transform: scale(0.4);
+        transition: transform 300ms;
+        opacity: 0.5;
+    }
+    
+    .activeSlide {
+        transform: scale(0.9);
+        opacity: 1;
+    }
+  
+    
 }

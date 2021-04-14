@@ -38,6 +38,23 @@ export default function Darshboard() {
 
             
             <section className="body-section">
+
+            <div className="b-1st-sub-header p-2">
+                    <div>
+                        <Dropdown>
+                                <Dropdown.Toggle id="dropdown-basic" className="dropdown-menu-c3">
+                                    Categories
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu>
+                                    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                    </div>
+                </div>
+                
             <Carousel/>
             
                 <div className="b-2nd-sub-header p-2 rounded">

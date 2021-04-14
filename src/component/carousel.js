@@ -68,7 +68,7 @@ export default function Carousel() {
                         
                         return (
                            <div className={id === productIndex ? "card-item slide activeSlide": "card-item slide"} key={id}>
-                           <div className="item-card card-height">
+                           <div className="item-card card-carousel">
                                     <div className="item-card-body">
                                         <div className="item-img-container">
                                             <img src={item.image} alt="addidas_ball" className="item-img" />

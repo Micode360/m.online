@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.urlencoded({extended: true}));
 
 
-app.get('/', (req,res)=>{
+app.get('/router', (req,res)=>{
     res.json({
         messsage: 'Server is live'
     });
